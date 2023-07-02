@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MHz Display Blaster"
-Date "2023-06-19"
-Rev "rev.0.1"
+Date "2023-07-02"
+Rev "rev.0.2"
 Comp "Scrap Computing"
 Comment1 ""
 Comment2 ""
@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 64924F41
-P 7700 3600
-F 0 "R1" H 7770 3646 50  0000 L CNN
-F 1 "39 Ohm" H 7770 3555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7630 3600 50  0001 C CNN
-F 3 "~" H 7700 3600 50  0001 C CNN
-	1    7700 3600
+P 7850 3600
+F 0 "R1" H 7920 3646 50  0000 L CNN
+F 1 "39 Ohm" H 7920 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7780 3600 50  0001 C CNN
+F 3 "~" H 7850 3600 50  0001 C CNN
+	1    7850 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -72,7 +72,7 @@ DIG1_F
 Text GLabel 4800 4400 0    50   Input ~ 0
 DIG1_G
 Text GLabel 4800 4500 0    50   Input ~ 0
-DP1
+DP
 Text GLabel 4800 4600 0    50   Input ~ 0
 DIG1_CC
 Text GLabel 6000 3800 2    50   Input ~ 0
@@ -90,7 +90,7 @@ DIG2_F
 Text GLabel 6000 4400 2    50   Input ~ 0
 DIG2_G
 Text GLabel 6000 4500 2    50   Input ~ 0
-DP2
+DP
 Text GLabel 6000 4600 2    50   Input ~ 0
 DIG2_CC
 $Comp
@@ -154,9 +154,6 @@ Text GLabel 5450 2750 1    50   Input ~ 0
 DIG1_D
 Text GLabel 5850 2750 1    50   Input ~ 0
 DIG1_F
-Wire Wire Line
-	7700 3800 7700 3750
-Connection ~ 7450 3800
 Text GLabel 4950 1100 1    50   Input ~ 0
 2
 Text GLabel 4750 1100 1    50   Input ~ 0
@@ -192,9 +189,9 @@ Text GLabel 5950 1600 3    50   Input ~ 0
 Text GLabel 6050 1600 3    50   Input ~ 0
 3
 Text GLabel 6150 2750 1    50   Input ~ 0
-DP1
+DP
 Text GLabel 4750 2750 1    50   Input ~ 0
-DP1
+DP
 Text GLabel 5850 3250 3    50   Input ~ 0
 3
 Text GLabel 4950 3250 3    50   Input ~ 0
@@ -257,35 +254,10 @@ Text GLabel 4750 1600 3    50   Input ~ 0
 1
 Text GLabel 6150 1600 3    50   Input ~ 0
 2
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 64A2DC50
-P 6950 2400
-F 0 "J3" V 6822 2480 50  0000 L CNN
-F 1 "Conn_01x02" V 6913 2480 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6950 2400 50  0001 C CNN
-F 3 "~" H 6950 2400 50  0001 C CNN
-	1    6950 2400
-	0    1    1    0   
-$EndComp
-Text GLabel 6850 2200 1    50   Input ~ 0
-DP2
-Text GLabel 6950 2200 1    50   Input ~ 0
-DP1
-Text GLabel 7700 3300 2    50   Input ~ 0
+Text GLabel 7350 3300 2    50   Input ~ 0
 DIG1_CC
-Text GLabel 7700 3400 2    50   Input ~ 0
+Text GLabel 7350 3200 2    50   Input ~ 0
 DIG2_CC
-Wire Wire Line
-	7350 3800 7350 4200
-Wire Wire Line
-	7350 4200 7150 4200
-Text GLabel 7700 3200 2    50   Input ~ 0
-TurboLED+
-Wire Wire Line
-	6850 3800 6850 4150
-Wire Wire Line
-	6850 4150 7050 4150
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 64A3B26D
@@ -311,41 +283,69 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 64A4B131
-P 7350 3800
-F 0 "#PWR0101" H 7350 3550 50  0001 C CNN
-F 1 "GND" H 7355 3627 50  0000 C CNN
-F 2 "" H 7350 3800 50  0001 C CNN
-F 3 "" H 7350 3800 50  0001 C CNN
-	1    7350 3800
+P 7350 3200
+F 0 "#PWR0101" H 7350 2950 50  0001 C CNN
+F 1 "GND" H 7355 3027 50  0000 C CNN
+F 2 "" H 7350 3200 50  0001 C CNN
+F 3 "" H 7350 3200 50  0001 C CNN
+	1    7350 3200
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0102
 U 1 1 64A4B7AB
-P 7450 3800
-F 0 "#PWR0102" H 7450 3650 50  0001 C CNN
-F 1 "+5V" H 7465 3973 50  0000 C CNN
-F 2 "" H 7450 3800 50  0001 C CNN
-F 3 "" H 7450 3800 50  0001 C CNN
-	1    7450 3800
+P 7850 3200
+F 0 "#PWR0102" H 7850 3050 50  0001 C CNN
+F 1 "+5V" H 7865 3373 50  0000 C CNN
+F 2 "" H 7850 3200 50  0001 C CNN
+F 3 "" H 7850 3200 50  0001 C CNN
+	1    7850 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 3800 7700 3800
-Wire Wire Line
-	7700 3200 7700 3450
 Text Label 7250 3800 1    50   ~ 0
 TurboSwOFF
 Text Label 7150 3800 1    50   ~ 0
 TurboSwCM
 Text Label 7050 3800 1    50   ~ 0
 TurboSwON
-Wire Wire Line
-	7150 3200 7150 4200
-Wire Wire Line
-	7050 3200 7050 4150
 Text Label 6850 3800 1    50   ~ 0
 TurboLED-
-Text GLabel 6950 3800 1    50   Input ~ 0
+Wire Wire Line
+	7850 3800 7850 3750
+Wire Wire Line
+	7450 3800 7850 3800
+Wire Wire Line
+	7850 3200 7850 3450
+Wire Wire Line
+	7350 3800 7350 3200
+Wire Wire Line
+	7150 3200 7150 3450
+Wire Wire Line
+	7850 3450 7150 3450
+Connection ~ 7850 3450
+Connection ~ 7150 3450
+$Comp
+L power:GND #PWR0103
+U 1 1 64A6F609
+P 6850 3800
+F 0 "#PWR0103" H 6850 3550 50  0001 C CNN
+F 1 "GND" H 6855 3627 50  0000 C CNN
+F 2 "" H 6850 3800 50  0001 C CNN
+F 3 "" H 6850 3800 50  0001 C CNN
+	1    6850 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3800 7050 3650
+Wire Wire Line
+	7150 3450 7150 3800
+Wire Wire Line
+	6950 3800 6950 3650
+Wire Wire Line
+	6950 3650 7050 3650
+Connection ~ 7050 3650
+Wire Wire Line
+	7050 3650 7050 3200
+Text Label 6950 3800 1    50   ~ 0
 TurboLED+
 $EndSCHEMATC
