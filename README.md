@@ -41,7 +41,7 @@ Gerber files are published in the releases: https://github.com/scrapcomputing/MH
 
 Reference      | Quantity| Value    | Footprint/Comments
 ---------------|---------|----------|----------
-U1             | 1       |LTD-6440G | 18-DIP 2-Digit 7-Segment Display Common Cathode 0.56"
+U1             | 1       |(e.g., LTD-6440G) | 18-DIP (0.600", 15.24mm distance between top and bottom row pins) 2-Digit 7-Segment Display Common Cathode 0.56" Green
 J1 J2          | 2       |Conn_02x15| Connector Male PinHeader 2x15 P2.54mm Vertical
 J4             | 1       |Conn_01x06| Connector Male PinHeader 1x06 P2.54mm Vertical
 Jumpers        | 15      |          | 2.54mm pitch jumpers
