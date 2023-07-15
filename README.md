@@ -1,12 +1,15 @@
 # MHz Display Blaster
 
 A clone of the TD-37S 2-digit MHz display that was common in 386/486 PC cases.
+It can display a Turbo and a non-Turbo number, depending on the state of the Turbo switch.
+It also drives the Turbo LED accordingly.
 
 <img src="img/MHzDisplayBlaster_assembled.jpg" width=360>
 <img src="img/MHzDisplayBlaster_PCB_front.jpg" width=240>
 <img src="img/MHzDisplayBlaster_PCB_back.jpg" width=240>
 
 # Assembly Tips
+- Video showing the assembly of rev.0.1 PCB: https://www.youtube.com/watch?v=a4iVehn7APU
 > **Warning**
 > Please solder the single-row header and the resistor *before* you solder the 7-segment display
 
@@ -29,7 +32,7 @@ A clone of the TD-37S 2-digit MHz display that was common in 386/486 PC cases.
 > **Note**
 > Please note that the PCB is often mounted up side down on the case.
 
-- For a simple tutorial on how to set it up please refer to the [video](https://www.youtube.com/watch?v=wNkg-e47Ex8)
+- For a simple tutorial on how to set it up please refer to the video: https://www.youtube.com/watch?v=wNkg-e47Ex8
 - [More resources on MHz Displays](https://www.minuszerodegrees.net/led_speed_display/led_speed_display.htm)
 
 
