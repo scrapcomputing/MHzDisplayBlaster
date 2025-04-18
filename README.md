@@ -46,7 +46,7 @@ Reference      | Quantity| Value    | Footprint/Comments
 ---------------|---------|----------|----------
 U1             | 1       |(e.g., LTD-6440G) | 18-DIP (0.600", 15.24mm distance between top and bottom row pins) 2-Digit 7-Segment Display Common Cathode 0.56" Green
 J1 J2          | 2       |Conn_02x15| Connector Male PinHeader 2x15 P2.54mm Vertical
-J4             | 1       |Conn_01x06| Connector Male PinHeader 1x06 P2.54mm Vertical
+J4             | 1       |Conn_01x07| Connector Male PinHeader 1x07 P2.54mm Vertical
 R1             | 1       | >= 39 Ohm (100 Ohms recommended)| 1/4 Watt resistor. The original TD37S has a 39 Ohm resistor. But the resistor value is specific to the type of the LEDs used. The original ones operate at around 2V, so the resistor drops 3V. Higher resistor values make the display more dim, but are also better for the longevity of the LEDs in the display.
 Jumpers        | 15      |          | 2.54mm pitch jumpers
 
